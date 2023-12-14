@@ -1,12 +1,6 @@
-from fastapi import FastAPI
-import sqlite3
-from fastapi.middleware.cors import CORSMiddleware
-import uvicorn
-import requests
 from flask import Flask, render_template, request
-from mysql.connector import connect, Error
 import os
-from flask_cors import CORS, cross_origin
+from flask_cors import CORS
 
 app = Flask(__name__)
 
