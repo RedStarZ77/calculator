@@ -1,9 +1,6 @@
-from main import root
-import asyncio
+from main import calc
 
 
 def test_root_get():
-    res = asyncio.run(root())
-    assert 'num1' in res
-    assert 'num2' in res
-    assert 'result' in res
+    res = calc(2,5,"add")
+    assert res == 7
