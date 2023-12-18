@@ -1,3 +1,5 @@
+import json
+
 from flask import Flask, render_template, request
 import os
 from flask_cors import CORS
@@ -36,8 +38,8 @@ async def root():
 
         result = calc(num1, num2, operation)
     except Exception as e:
-        return {"result": "No data", "num1": float(num1), "num2": float(num2)}
-    return {"result": float(result), "num1": float(num1), "num2": float(num2)}
+        return json.dumps({"result": "No data", "num1": float(num1), "num2": float(num2)})
+    return json.dumps({"result": float(result), "num1": float(num1), "num2": float(num2)})
 
 
 if __name__ == "__main__":
