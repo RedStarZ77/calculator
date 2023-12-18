@@ -41,4 +41,4 @@ async def root():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=int(os.getenv('PORT', 3001)))
+    app.run(host="0.0.0.0", port=int(os.getenv('PORT', 80)))

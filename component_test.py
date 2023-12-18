@@ -1,7 +1,7 @@
 import requests
 
 
-base_url = 'http://localhost:3001/'
+base_url = 'http://localhost:80/'
 
 
 def test_root_get():
