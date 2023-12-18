@@ -5,6 +5,6 @@ COPY . .
 
 
 
-RUN pip install flask flask_cors
+RUN pip install flask flask_cors asyncio requests
 
 CMD ["python", "main.py"]

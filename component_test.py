@@ -1,7 +1,5 @@
-import pytest
 import requests
-from uuid import UUID, uuid4
-from datetime import datetime
+
 
 base_url = 'http://localhost:3001/'
 
