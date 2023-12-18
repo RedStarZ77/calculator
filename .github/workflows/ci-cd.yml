@@ -13,7 +13,7 @@ jobs:
           run: |
             sudo apt update
             sudo apt install -y python3-pip
-            pip install flask flask_cors asyncio requests pytest json
+            pip install flask flask_cors asyncio requests pytest
             docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/calculator:latest
             docker run -p 3001:3001 -d ${{ secrets.DOCKER_USERNAME }}/calculator:latest
             sleep 5
